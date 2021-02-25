@@ -5,11 +5,6 @@ interface FunctionApiExampleProps {
   title: string;
 }
 
-interface FunctionApiExampleState {
-  count: number;
-  todos: TodosInterface[];
-}
-
 interface TodosInterface {
   userId: number;
   id: number;
