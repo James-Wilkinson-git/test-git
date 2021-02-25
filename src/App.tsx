@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
 import { ClassApiExample } from './components/ClassApiExample/ClassApiExample';
 import FunctionApiExample from './components/FunctionApiExample/FunctionApiExample';
+
+import './overrides.css';
 
 function App() {
   return (
