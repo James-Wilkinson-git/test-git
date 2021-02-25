@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["jsx-a11y", "prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
