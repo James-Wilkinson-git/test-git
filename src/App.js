@@ -1,6 +1,6 @@
-import "./App.css";
-import ClassApiExample from "./components/ClassApiExample/ClassApiExample";
-import FunctionApiExample from "./components/FunctionApiExample/FunctionApiExample";
+import './App.css';
+import ClassApiExample from './components/ClassApiExample/ClassApiExample';
+import FunctionApiExample from './components/FunctionApiExample/FunctionApiExample';
 function App() {
   return (
     <div className="App">
