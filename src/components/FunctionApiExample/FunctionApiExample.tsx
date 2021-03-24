@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
+import { Paper } from '@material-ui/core';
 import React, { useState, useEffect, FC } from 'react';
+import DisplayCard from '../DisplayCard/DisplayCard';
 
 interface FunctionApiExampleProps {
   title: string;
@@ -22,7 +24,7 @@ const FunctionApiExample: FC<FunctionApiExampleProps> = ({ title }) => {
       });
   });
   return (
-    <div>
+    <Paper elevation={3} className="paperPadding">
       <h1>{title}</h1>
       <p>You clicked {count} times</p>
       <button type="button" onClick={() => setCount(count + 1)}>
@@ -31,15 +33,10 @@ const FunctionApiExample: FC<FunctionApiExampleProps> = ({ title }) => {
       <h3>Posts</h3>
       <ul>
         {todos.map((todo) => {
-          return (
-            <li key={todo.id} className="list">
-              <span className="repo-text">Title: {todo.title} </span>
-              <span className="repo-description">Body: {todo.body}</span>
-            </li>
-          );
+          return <DisplayCard data={todo} />;
         })}
       </ul>
-    </div>
+    </Paper>
   );
 };
 export default FunctionApiExample;

@@ -1,15 +1,16 @@
+import { Container, Grid } from '@material-ui/core';
 import React from 'react';
-import { ClassApiExample } from './components/ClassApiExample/ClassApiExample';
-import FunctionApiExample from './components/FunctionApiExample/FunctionApiExample';
+import DragRaceGifs from './components/DragRaceGifs/DragRaceGifs';
 
 import './overrides.css';
 
 function App() {
   return (
-    <div className="App">
-      <ClassApiExample title="Hi, I'm a Class Component" />
-      <FunctionApiExample title="Hello I'm a Function Component" />
-    </div>
+    <Container maxWidth="xl">
+      <Grid container spacing={1}>
+        <DragRaceGifs />
+      </Grid>
+    </Container>
   );
 }
 
